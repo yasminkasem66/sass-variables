@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css style -->
+    <link href="css/main.min.css" rel="stylesheet">
+    <!-- js style -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Bootstrap Sass variables</title>
+</head>
+
+<body >
+    <!-- header -->
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-altdark ">Features</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control form-control-dark" placeholder="Search..."
+                        aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-altlight">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="b-example-divider"></div>
+    <!-- cover -->
+    <div class="d-flex h-100 text-center text-white bg-dark ">
+
+        <div class=" container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <main class="px-3 " >
+                <h1>Cover your page.</h1>
+                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download,
+                    edit the text, and add your own fullscreen background photo to make it your own.</p>
+                <p class="lead">
+                    <a href="#" class="btn btn-lg btn-black  fw-bold border-white bg-white">Learn more</a>
+                </p>
+            </main>
+
+        </div>
+
+    </div>
+    <!-- START THE FEATURETTES -->
+    <div class="container mt-3 marketing ">
+        <!-- START THE FEATURETTES -->
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading ">Oh yeah, it’s that good. <span class="text-muted">See for
+                        yourself.</span></h2>
+                <p class="lead ">Another featurette? Of course. More placeholder content here to give you an idea of how
+                    this layout would work with some actual real-world content in place.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                        dy=".3em">500x500</text>
+                </svg>
+
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <!-- /END THE FEATURETTES -->
+    </div>
+    <!-- pricing -->
+    <section >
+        <div class="container bg-light " >
+    
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal">Pricing</h1>
+                <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this
+                    Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.
+                </p>
+            </div>
+    
+            <main>
+                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Free</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small>
+                                </h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>10 users included</li>
+                                    <li>2 GB of storage</li>
+                                    <li>Email support</li>
+                                    <li>Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Pro</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small>
+                                </h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>20 users included</li>
+                                    <li>10 GB of storage</li>
+                                    <li>Priority email support</li>
+                                    <li>Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                            <div class="card-header py-3 text-white bg-primary border-primary">
+                                <h4 class="my-0 fw-normal">Enterprise</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small>
+                                </h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>30 users included</li>
+                                    <li>15 GB of storage</li>
+                                    <li>Phone and email support</li>
+                                    <li>Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <h2 class="display-6 text-center mb-4">Compare plans</h2>
+    
+                <div class="table-responsive">
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                                <th style="width: 34%;"></th>
+                                <th style="width: 22%;">Free</th>
+                                <th style="width: 22%;">Pro</th>
+                                <th style="width: 22%;">Enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-start">Public</th>
+                                <td><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                                <td><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                                <td><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Private</th>
+                                <td></td>
+                                <td><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                                <td><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                            </tr>
+                        </tbody>
+    
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-start">Permissions</th>
+                                <td><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                                <td><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                                <td><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Sharing</th>
+                                <td></td>
+                                <td><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                                <td><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Unlimited members</th>
+                                <td></td>
+                                <td><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                                <td><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Extra security</th>
+                                <td></td>
+                                <td></td>
+                                <td><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+    
+        </div>
+
+    </section>
+    <!-- footer -->
+    <div class="container bg-white">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-2">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-2">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-2">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-4 offset-1">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of whats new and exciting from us.</p>
+                        <div class="d-flex w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between py-4 my-4 border-top">
+                <p class="text-altdark">© 2021 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

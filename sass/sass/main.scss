@@ -1,0 +1,118 @@
+// custome variables goes here
+$primary:#c29938;
+$light:#fbf5e5;
+/*
+ add a new theme color that doesnt  exist  in this case we will need
+  to add this color to the  $theme-colors  and we will need to import the whole files that
+  containes the  $theme-colors variable defined
+*/
+// import functions and variables file but notice  this import must  come after any variables that  we redefine 
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+// the new files we wanna add
+$custom-theme-colors:(
+    "altlight":#f2ebfa,
+    "altdark":#522192
+);
+// merging our own map with the original map
+$theme-colors: map-merge($custom-theme-colors,$theme-colors);
+// import bootstrap sass 
+@import '../node_modules/bootstrap/scss/bootstrap';
+// or
+// Required
+// @import "../node_modules/bootstrap/scss/variables";
+// @import "../node_modules/bootstrap/scss/mixins";
+// @import "../node_modules/bootstrap/scss/root";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Sass Output Styles => 1 :nested  is the default Sass style because it reflects the structure of the CSS styles in which each property has its own line
+main {
+        }
+article {
+        }
+  article p {
+         }
+=> 2:expanded 
+main {
+ 
+}
+article {
+}
+article p {
+}
+=> 3:compact In compact style each rule takes up only one line with every property defined on that line. It takes up less space than :nested and :expanded.
+article { background-color: #00ff00; color: red; border: 1px solid blue; }
+=> 4:compressed Compressed styles takes up the minimum amount of space possible. There is no whitespace except space that is necessary to separate selectors and the newline on the end of the document. It is not meant to be human-readable but more for the production version .
+
+compile different style in this way 
+sass --watch style.scss:style.css --style compressed
+or change it from " live sass format " in settings
+*/
+
+/******************************************************
+Autoprefixer 
+*******************************************************/
+/*
+PostCSS plugin to parse CSS and add vendor prefixes to CSS rules using values from Can I Use.
+It is recommended by Google and used in Twitter and Alibaba.
+ex
+input
+::placeholder {
+  color: gray;
+}
+output
+::-moz-placeholder {
+  color: gray;
+}
+:-ms-input-placeholder {
+  color: gray;
+}
+::placeholder {
+  color: gray;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
