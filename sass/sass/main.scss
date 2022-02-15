@@ -1,28 +1,47 @@
+// @import "../node_modules/bootstrap/scss/functions";
 // custome variables goes here
 $primary:#c29938;
 $light:#fbf5e5;
+$altlight:#f2ebfa;
+$altdark:#522192;
 /*
  add a new theme color that doesnt  exist  in this case we will need
   to add this color to the  $theme-colors  and we will need to import the whole files that
   containes the  $theme-colors variable defined
 */
 // import functions and variables file but notice  this import must  come after any variables that  we redefine 
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-// the new files we wanna add
-$custom-theme-colors:(
-    "altlight":#f2ebfa,
-    "altdark":#522192
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  #6f7471,
+  "success":  #198754,
+  "info":      #0dcaf0 ,
+  "warning":    #ffc107,
+  "danger":     #dc3545,
+  "light":      $light,
+  "dark":     #000000,
+) !default;
+
+$custom-colors: (
+  "altlight":$altlight,
+  "altdark":$altdark,
+  "custom-color": #900
 );
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// $theme-colors:map-merge($theme-colors, (
+//   "altDark": $altdark
+// ));
+// the new files we wanna add
+// $custom-theme-colors:(
+//     "altlight":$altlight,
+//     "altdark":$altdark
+// );
 // merging our own map with the original map
-$theme-colors: map-merge($custom-theme-colors,$theme-colors);
+// $theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
 // import bootstrap sass 
 @import '../node_modules/bootstrap/scss/bootstrap';
-// or
-// Required
-// @import "../node_modules/bootstrap/scss/variables";
-// @import "../node_modules/bootstrap/scss/mixins";
-// @import "../node_modules/bootstrap/scss/root";
+
 
 
 
