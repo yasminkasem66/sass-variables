@@ -39,6 +39,31 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 // merging our own map with the original map
 // $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 
+
+
+// font size 
+$font-size-root:              null !default;
+$font-size-base:              .5rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .7 !default;
+$font-size-lg:                $font-size-base * 1 !default;
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           200 !default;
+$font-weight-normal:          500 !default;
+$font-weight-bold:            900 !default;
+$font-weight-bolder:          bolder !default;
+
+// $font-size-root:              null !default;
+// $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+// $font-size-sm:                $font-size-base * .875 !default;
+// $font-size-lg:                $font-size-base * 1.25 !default;
+
+// $font-weight-lighter:         lighter !default;
+// $font-weight-light:           300 !default;
+// $font-weight-normal:          400 !default;
+// $font-weight-bold:            700 !default;
+// $font-weight-bolder:          bolder !default;
+
 // import bootstrap sass 
 @import '../node_modules/bootstrap/scss/bootstrap';
 
